@@ -15,5 +15,6 @@ WIN_COMBINATIONS = [
   ]
 
 def won?(board)
+  win_index_1 = win_combinations[0]
   
 end
