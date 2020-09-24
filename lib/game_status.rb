@@ -36,3 +36,7 @@ def full?(board)
     spaces == "X" || spaces == "O"
   end
 end
+
+def draw?(board)
+  board.none? do |spaces|
+    s
