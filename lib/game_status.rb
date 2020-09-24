@@ -48,6 +48,10 @@ end
 def over?(board)
   if won?(board) && !full?(board)
     return true
+  elsif !won?(board) && full?(board)
+    return true 
+  else
+    return false
   end
 end
       
