@@ -4,5 +4,5 @@ def position_taken?(board, index)
 end
 
 def win_combination(board, index)
-
+end
   
