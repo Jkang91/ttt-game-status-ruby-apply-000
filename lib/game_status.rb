@@ -15,13 +15,19 @@ WIN_COMBINATIONS = [
   ]
 
 def won?(board)
-  win_index_1 = WIN_COMBINATIONS[0]
-  win_index_2 = WIN_COMBINATIONS[1]
-  win_index_3 = WIN_COMBINATIONS[2]
-  win_index_4 = WIN_COMBINATIONS[3]
-  win_index_5 = WIN_COMBINATIONS[4]
-  win_index_6 = WIN_COMBINATIONS[5]
-  win_index_7 = WIN_COMBINATIONS[6]
-  win_index_8 = WIN_COMBINATIONS[7]
+  win_index_1 = WIN_COMBINATION[0]
+  win_index_2 = WIN_COMBINATION[1]
+  win_index_3 = WIN_COMBINATION[2]
+ 
+  position_1 = board[win_index_1]
+  position_2 = board[win_index_2]
+  position_3 = board[win_index_3]
+  
+  if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    return WIN_COMBINATION
+  else
+    false 
+  end
+end
   
 end
