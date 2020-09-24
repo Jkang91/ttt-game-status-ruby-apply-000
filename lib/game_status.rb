@@ -39,4 +39,5 @@ end
 
 def draw?(board)
   board.none? do |spaces|
-    s
+    if !won?(board) && full?(board)
+      
