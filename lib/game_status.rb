@@ -33,7 +33,7 @@ end
 
 def full?(board)
   board.each do |spaces|
-    if spaces == " "
+    if spaces == " " || spaces == "" || spaces == nil 
       return false
     else
       true 
